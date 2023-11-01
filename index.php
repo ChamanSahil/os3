@@ -13,7 +13,7 @@
             $password = "test";
             $database = "testDB";
             
-            $connect = mysqli_connect($servername, $username, $password, $database);
+            $connect = mysqli_connect($servername, $_ENV['vishal'], $_ENV['test'], $_ENV['testDB']);
             // Check connection
             if (!$connect) {
                 die("Connection failed: " . mysqli_connect_error());
