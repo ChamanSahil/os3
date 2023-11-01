@@ -19,7 +19,7 @@
                 die("Connection failed: " . mysqli_connect_error());
             } else {
                 echo "Connected to MySQL successfully";
-                $result = mysqli_query($connect, "SELECT * FROM hospitals") or die(mysqli_error($connect));
+                $result = mysqli_query($connect, "SELECT * FROM appointment") or die(mysqli_error($connect));
                 print_r(mysqli_fetch_array($result));
 
                 echo "<br>";
