@@ -8,7 +8,7 @@
     </head>
     <body>
         <?php
-            $servername = "dbConnector";
+            $servername = "db-connector";
             $username = "vishal";
             $password = "test";
             $database = "testDB";
